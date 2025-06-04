@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jz0CXiFqpKw=",
+  "success": true,
+  "projectFilePath": "/home/bublik/OnFiPS/PEngine/PEngine/PEngine.csproj",
+  "expectedPackageFiles": [
+    "/home/bublik/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.4/microsoft.aspnetcore.app.ref.9.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
