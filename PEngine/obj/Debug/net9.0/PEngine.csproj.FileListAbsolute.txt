@@ -1,0 +1,15 @@
+/home/bublik/OnFiPS/PEngine/PEngine/bin/Debug/net9.0/PEngine
+/home/bublik/OnFiPS/PEngine/PEngine/bin/Debug/net9.0/PEngine.deps.json
+/home/bublik/OnFiPS/PEngine/PEngine/bin/Debug/net9.0/PEngine.runtimeconfig.json
+/home/bublik/OnFiPS/PEngine/PEngine/bin/Debug/net9.0/PEngine.dll
+/home/bublik/OnFiPS/PEngine/PEngine/bin/Debug/net9.0/PEngine.pdb
+/home/bublik/OnFiPS/PEngine/PEngine/obj/Debug/net9.0/PEngine.GeneratedMSBuildEditorConfig.editorconfig
+/home/bublik/OnFiPS/PEngine/PEngine/obj/Debug/net9.0/PEngine.AssemblyInfoInputs.cache
+/home/bublik/OnFiPS/PEngine/PEngine/obj/Debug/net9.0/PEngine.AssemblyInfo.cs
+/home/bublik/OnFiPS/PEngine/PEngine/obj/Debug/net9.0/PEngine.csproj.CoreCompileInputs.cache
+/home/bublik/OnFiPS/PEngine/PEngine/obj/Debug/net9.0/PEngine.sourcelink.json
+/home/bublik/OnFiPS/PEngine/PEngine/obj/Debug/net9.0/PEngine.dll
+/home/bublik/OnFiPS/PEngine/PEngine/obj/Debug/net9.0/refint/PEngine.dll
+/home/bublik/OnFiPS/PEngine/PEngine/obj/Debug/net9.0/PEngine.pdb
+/home/bublik/OnFiPS/PEngine/PEngine/obj/Debug/net9.0/PEngine.genruntimeconfig.cache
+/home/bublik/OnFiPS/PEngine/PEngine/obj/Debug/net9.0/ref/PEngine.dll
