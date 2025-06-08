@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PEngine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98a4a3cb86af9bd3a5a6d2f9310cb948eb74e825")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+256fe80a9ebfbbca28ab980735c89bf433996d56")]
 [assembly: System.Reflection.AssemblyProductAttribute("PEngine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PEngine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
