@@ -1,13 +1,17 @@
-﻿using PEngine.Engine;
+﻿using PEngine.Engine.Core;
+using PEngine.Engine.DI;
+using PEngine.Engine.Log;
 
 // TODO: Implement GUI logger and replace to it
 ILogger defaultLogger = new ConsoleLogger();
+defaultLogger.Initialize();
 
-// TODO: Maybe replace to DI
-DataContext dataContext = new DataContext();
-LogContext logContext = new LogContext();
-logContext.Logger = defaultLogger;
-dataContext.LogContext = logContext;
+defaultLogger.LogWarning("Main", "GUI logger has not implemented yet.");
 
-EngineCore engine = new EngineCore(ref dataContext);
-engine.Initialize();
+IDiContainer diContainer = new DiContainer();
+diContainer.Initialize(ref defaultLogger);
+
+diContainer.Register(defaultLogger);
+
+EngineCore engine = new EngineCore();
+engine.Initialize(ref diContainer);

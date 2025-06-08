@@ -11,4 +11,8 @@
       <Folder Include="DevTest\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Silk.NET" Version="2.22.0" />
+    </ItemGroup>
+
 </Project>

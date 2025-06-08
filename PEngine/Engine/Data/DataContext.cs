@@ -1,6 +1,6 @@
-namespace PEngine.Engine;
+namespace PEngine.Engine.Data;
 
 public struct DataContext
 {
-    public LogContext LogContext;
+    // TODO: Make some data here
 }
