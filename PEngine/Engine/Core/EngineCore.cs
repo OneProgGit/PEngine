@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using PEngine.Engine.Component_System;
 using PEngine.Engine.Data;
 using PEngine.Engine.DI;
 using PEngine.Engine.Log;
@@ -11,22 +12,28 @@ public class EngineCore : IEngineCore
     private ILogger _logger;
     private IDiContainer _diContainer;
 
-    private List<IEngineModule> _modules;
+    private IRenderModule _renderModule;
+    private IPhysicsModule _physicsModule;
+    private IUiModule _uiModule;
+    
+    private GameContext _gameContext;
 
     public void Initialize(ref IDiContainer diContainer)
     {
         _diContainer = diContainer;
         _logger = _diContainer.Get<ILogger>();
         _logger.LogInfo(this, "Default engine core has just initialized.");
-        // There you can add your modules
-        _modules = new List<IEngineModule>();
-        // Uncomment to see how it works on example
-        _modules.Add(new ExampleModule());
-        foreach (IEngineModule module in _modules)
-        {
-            module.Initialize(ref _diContainer);
-        }
-
+        _renderModule = null;
+        _physicsModule = null;
+        _uiModule = null;
+        _logger.LogWarning(this, "No modules loaded.");
+        
+        // You can add your game objects here
+        GameObject exampleObject = new GameObject();
+        exampleObject.Initialize("Bublik");
+        _gameContext = _diContainer.Get<DataContext>().GameContext;
+        _gameContext.GameObjects["Bublik"] = exampleObject;
+        
         StartUpdateCycle();
     }
 
@@ -57,9 +64,10 @@ public class EngineCore : IEngineCore
 
     public void Update(double deltaTime)
     {
-        foreach (IEngineModule module in _modules)
-        {
-            module.Update(deltaTime);
-        }   
+        _renderModule.Update(deltaTime);
+        _physicsModule.Update(deltaTime);
+        _uiModule.Update(deltaTime);
+
+        // TODO: Make update yoooo
     }
 }

@@ -1,4 +1,5 @@
-﻿using PEngine.Engine.Core;
+﻿using PEngine.Engine.Component_System;
+using PEngine.Engine.Core;
 using PEngine.Engine.Data;
 using PEngine.Engine.DI;
 using PEngine.Engine.Log;
@@ -14,6 +15,11 @@ EngineContext engineContext = new EngineContext()
     TargetFrameRate = 60.0
 };
 dataContext.EngineContext = engineContext;
+GameContext gameContext = new GameContext()
+{
+    GameObjects = new Dictionary<string, GameObject>()
+};
+dataContext.GameContext = gameContext;
 
 defaultLogger.LogWarning("Main", "GUI logger has not implemented yet.");
 
